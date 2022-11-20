@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activiad 2 - Analisis de Sistemas</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+<body class="bg-light">
+
+    <navbar id="navbar-scroll" class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container">
+            <a href="/" class="navbar-brand">
+                <!-- Icono -->
+                <i class="bi bi-bootstrap-fill"></i>
+                <!-- Titulo de navbar -->
+                <span class="align-top">Practica 1</span>
+            </a>
+            <!-- Boton para desplegar menu de navegación en celulares responsive -->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- lista de hipervinculos -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" aria-current="page">Curriculum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cuestionario.html" class="nav-link">Cuestionario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="detalles.html" class="nav-link">Detalles</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </navbar>
+
+    <main class="container d-flex flex-column justify-content-center bg-white shadow-lg mt-4">
+        <div class="text-center mt-2">
+            <h1>Justificaciones</h1>
+            <p class="lead">En este apartado encontrara la justificación de cada componente utilizado.</p>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-12" id="nombre">
+                <h3>Input Nombre</h3>
+                <p>Este input sirve para capturar el nombre del cliente en el formulario.</p>
+
+                <hr>
+            </div>
+            <div class="col-12" id="password">
+                <h3>Input Contraseña</h3>
+                <p>Este input sirve para capturar la contraseña del cliente en el formulario.</p>
+
+                <hr>
+            </div>
+            <div class="col-12" id="passwordRep">
+                <h3>Input Repetir Contraseña</h3>
+                <p>Este input sirve para confirmar la contraseña ingresada y hacer una validación en el formulario.</p>
+
+                <hr>
+            </div>
+            <div class="col-12" id="address">
+                <h3>Input Direccion</h3>
+                <p>Este input sirve para capturar la direccion del cliente en el formulario.</p>
+
+                <hr>
+            </div>
+            <div class="col-12" id="city">
+                <h3>Input Ciudad</h3>
+                <p>Este input sirve para capturar la ciudad del cliente en el formulario.</p>
+                
+                <hr>
+            </div>
+            <div class="col-12" id="province">
+                <h3>Input Numero de Huespedes</h3>
+                <p>Este input sirve para capturar la provincia del cliente en el formulario.</p>
+                
+                <hr>
+            </div>
+            <div class="col-12" id="quantity">
+                <h3>Input Ciudad</h3>
+                <p>Este input sirve para capturar la cantidad de huespedes en la habitación.</p>
+                
+                <hr>
+            </div>
+            <div class="col-12" id="services">
+                <h3>Servicios</h3>
+                <p>Este apartado nos sirve para saber que servicios va a necesitar el cliente en su habitación.</p>
+                
+                <hr>
+            </div>
+            <div class="col-12" id="room_types">
+                <h3>Tipos de Habitación</h3>
+                <p>Este apartado nos sirve para saber que tipo de habitación desea el cliente.</p>
+                
+                <hr>
+            </div>
+            <div class="col-12" id="pension">
+                <h3>Pensión</h3>
+                <p>Este apartado nos sirve para saber que servicios de pension necesita el cliente.</p>
+                
+                <hr>
+            </div>
+            <div class="col-12" id="comments">
+                <h3>Comentarios o sugerencias</h3>
+                <p>Este apartado nos sirve para que el cliente ingrese los comentarios, quejas o sugerencias que tenga de nuestros servicios</p>
+                
+                <hr>
+            </div>
+            <div class="col-12" id="emailContact">
+                <h3>Pensión</h3>
+                <p>Este apartado nos sirve para que el cliente nos deje su correo de contacto y así poder comunicarnos con el.</p>
+                
+                <hr>
+            </div>
+            <div class="col-12" id="privacity">
+                <h3>Pensión</h3>
+                <p>Este apartado nos sirve para informarle al cliente sobre las politicas de la empresa y lo que haremos con su información, y de esta forma evitarnos inconvenientes.</p>
+                
+                <hr>
+            </div>
+            <div class="col-12" id="submit">
+                <h3>Boton Enviar</h3>
+                <p>Este apartado nos sirve para enviar toda la información del formulario para validarla y enviarla a nuestro Back-end.</p>
+                
+                <hr>
+            </div>
+            <div class="col-12" id="reset">
+                <h3>Boton Reset</h3>
+                <p>Este apartado nos sirve para borrar la información que ya había escrito el cliente en los inputs, checkbox y textarea.</p>
+                
+                <hr>
+            </div>
+        </div>
+
+        <footer class="text-center mb-4">
+            &copy; Eduardo Gallegos Domínguez - FCAV - LTI
+        </footer>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activiad 2 - Analisis de Sistemas</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+</head>
+<body class="bg-light">
+
+    <navbar id="navbar-scroll" class="navbar navbar-expand-lg navbar-dark bg-dark ">
+        <div class="container">
+            <a href="/" class="navbar-brand">
+                <!-- Icono -->
+                <i class="bi bi-bootstrap-fill"></i>
+                <!-- Titulo de navbar -->
+                <span class="align-top">Practica 1</span>
+            </a>
+            <!-- Boton para desplegar menu de navegación en celulares responsive -->
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- lista de hipervinculos -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link" aria-current="page">Curriculum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cuestionario.html" class="nav-link">Cuestionario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="detalles.html" class="nav-link">Detalles</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </navbar>
+
+    <main class="container d-flex flex-column justify-content-center bg-white shadow-lg mt-4">
+        <div class="text-center mt-2">
+            <h1>Formulario de Hospedaje</h1>
+            <p class="lead">Ingrese todos sus datos para reservar una habitación.</p>
+        </div>
+
+        <hr>
+
+        <form>
+            <div class="form-group mb-2">
+                <label for="name">Nombre:</label>
+                <a href="detalles.html#nombre">(Justificación)</a>
+                <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre">         
+            </div>
+            <div class="form-group mb-2">
+                <label for="password">Contraseña:</label>
+                <a href="detalles.html#password">(Justificación)</a>
+                <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña">               
+            </div>
+            <div class="form-group mb-2">
+                <label for="passwordRep">Repetir contraseña:</label>
+                <a href="detalles.html#passwordRep">(Justificación)</a>
+                <input type="password" class="form-control" id="passwordRep" placeholder="Repita la contraseña">              
+            </div>
+            <div class="form-group mb-2">
+                <label for="address">Direccion:</label>
+                <a href="detalles.html#address">(Justificación)</a>
+                <input type="text" class="form-control" id="address" placeholder="Ingrese su dirección">              
+            </div>
+            <div class="form-group mb-2">
+                <label for="city">Ciudad:</label>
+                <a href="detalles.html#city">(Justificación)</a>
+                <input type="text" class="form-control" id="city" placeholder="Ingrese la ciudad">              
+            </div>
+            <div class="form-group mb-2">
+                <label for="province">Provincia:</label>
+                <a href="detalles.html#province">(Justificación)</a>
+                <input type="text" class="form-control" id="province" placeholder="Ingrese la provincia">                
+            </div>
+            <div class="form-group mb-4">
+                <label for="quantity">Numero de huespedes:</label>
+                <a href="detalles.html#quantity">(Justificación)</a>
+                <input type="number" class="form-control" id="quantity" name="quantity" min="1" max="10">            
+            </div>
+
+            <!-- Grupo 1 -->
+            <div class="form-group mb-3">
+                <div class="row">
+                    <div class="col-4 flex-grow-1">
+                        <label for="">Servicios:</label>       
+                        <a href="detalles.html#services">(Justificación)</a>               
+                    </div>
+
+                    <div class="col-4">
+                        <label for="">Tipo de habitación:</label>
+                        <a href="detalles.html#room_types">(Justificación)</a>       
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-2">
+                        <div class="form-group mb-2">
+                            <input type="checkbox" name="air" id="air">
+                            <label for="air">Aire Acondicionado</label>
+                        </div>
+                        <div class="form-group mb-2">
+                            <input type="checkbox" name="box" id="box">
+                            <label for="box">Caja Fuerte</label>
+                        </div>
+                        <div class="form-group mb-2">
+                            <input type="checkbox" name="bar" id="bar">
+                            <label for="bar">Minibar</label>
+                        </div>
+                        <div class="form-group mb-2">
+                            <input type="checkbox" name="internet" id="internet">
+                            <label for="internet">Conexion a Internet</label>
+                        </div>
+                    </div>
+    
+                    <div class="col-2 flex-grow-1">
+                        <div class="form-group mb-2">
+                            <input type="checkbox" name="alm" id="alm">
+                            <label for="alm">Almohadas a la carta</label>
+                        </div>
+                        <div class="form-group mb-2">
+                            <input type="checkbox" name="detect" id="detect">
+                            <label for="detect">Detector de humos</label>
+                        </div>
+                        <div class="form-group mb-2">
+                            <input type="checkbox" name="tableWork" id="tableWork">
+                            <label for="tableWork">Mesa de trabajo</label>
+                        </div>
+                        <div class="form-group mb-2">
+                            <input type="checkbox" name="wifi" id="wifi">
+                            <label for="wifi">WIFI</label>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="form-group mb-2">
+                            <input type="checkbox" name="indv" id="indv">
+                            <label for="indv">Individual</label>
+                        </div>
+                        <div class="form-group mb-2">
+                            <input type="checkbox" name="double" id="double">
+                            <label for="double">Doble</label>
+                        </div>
+                        <div class="form-group mb-2">
+                            <input type="checkbox" name="suite" id="suite">
+                            <label for="suite">Suite</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            <!-- Grupo 2 -->
+            <div class="form-group mb-3">
+                <div class="row">
+                    <div class="col-4 flex-grow-1">
+                        <label for="">Pensión:</label>           
+                        <a href="detalles.html#pension">(Justificación)</a>           
+                    </div>
+
+                    <div class="col-4">
+                        <label for="">Comentarios o sugerencias:</label>    
+                        <a href="detalles.html#comments">(Justificación)</a>    
+                    </div>
+
+                    <div class="col-4">
+                        <label for="">Email contacto:</label>     
+                        <a href="detalles.html#emailContact">(Justificación)</a>
+                    </div>
+                </div>
+    
+                <div class="row">    
+                    <div class="col-2 flex-grow-1">
+                        <div class="form-group mb-2">
+                            <input type="checkbox" name="aloj" id="aloj">
+                            <label for="aloj">Alojamiento</label>
+                        </div>
+                        <div class="form-group mb-2">
+                            <input type="checkbox" name="breakfast" id="breakfast">
+                            <label for="breakfast">Desayuno</label>
+                        </div>
+                        <div class="form-group mb-2">
+                            <input type="checkbox" name="media" id="media">
+                            <label for="media">Media</label>
+                        </div>
+                        <div class="form-group mb-2">
+                            <input type="checkbox" name="completa" id="completa">
+                            <label for="completa">Completa</label>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="form-group mb-2">
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="col-4">
+                        <div class="form-group mb-2">
+                            <input type="email" class="form-control" name="contact" id="contact">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="form-group mb-2">
+                <input type="checkbox" name="politicy" id="politicy">
+                <label for="politicy">Acepto la politica de privacidad</label>
+                <a href="detalles.html#privacity">(Justificación)</a>
+            </div>
+
+            <div class="form-group mb-2">
+                <button type="submit" class="btn btn-success">Enviar</button>
+                <a href="detalles.html#submit">(Justificación)</a>
+                <button type="reset" class="btn btn-danger">Borrar</button>
+                <a href="detalles.html#reset">(Justificación)</a>
+            </div>
+        </form>
+
+        <hr>
+        <footer class="text-center mb-4">
+            &copy; Eduardo Gallegos Domínguez - FCAV - LTI
+        </footer>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
